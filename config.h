@@ -114,17 +114,17 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("") }, */
 	{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	/* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") }, */
-	TAGKEYS(			XK_1,		0)
-	TAGKEYS(			XK_2,		1)
-	TAGKEYS(			XK_3,		2)
-	TAGKEYS(			XK_4,		3)
-	TAGKEYS(			XK_5,		4)
-	TAGKEYS(			XK_6,		5)
-	TAGKEYS(			XK_7,		6)
-	TAGKEYS(			XK_8,		7)
-	TAGKEYS(			XK_9,		8)
-	{ MODKEY,			XK_0,		view,		{.ui = ~0 } },
-	{ MODKEY|ShiftMask,		XK_0,		tag,		{.ui = ~0 } },
+	TAGKEYS(                        XK_ampersand,                     0)
+	TAGKEYS(                        XK_eacute,                        1)
+	TAGKEYS(                        XK_quotedbl,                      2)
+	TAGKEYS(                        XK_apostrophe,                    3)
+	TAGKEYS(                        XK_parenleft,                     4)
+	TAGKEYS(                        XK_minus,                         5)
+	TAGKEYS(                        XK_egrave,                        6)
+	TAGKEYS(                        XK_underscore,                    7)
+	TAGKEYS(                        XK_ccedilla,                      8)
+	{ MODKEY,			XK_agrave,		view,		{.ui = ~0 } },
+	{ MODKEY|ShiftMask,		XK_agrave,		tag,		{.ui = ~0 } },
 	{ MODKEY,			XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 5; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY|ShiftMask,		XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 15; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)") },
